@@ -15,16 +15,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-        </activity>
-        <activity android:name=".ScheduleActivity">
-        </activity>
-        <activity android:name=".TeacherActivity">
-        </activity>
-        <activity android:name=".AlramActivity">
-        </activity>
-        <activity android:name=".TeacherInforActivity">
-        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ScheduleActivity" />
+        <activity android:name=".TeacherActivity" />
+        <activity android:name=".AlramActivity" />
+        <activity android:name=".TeacherAdapter" />
+        <activity android:name=".TeacherInfor" />
+        <activity android:name=".AddActivity"></activity>
     </application>
 
 </manifest>
