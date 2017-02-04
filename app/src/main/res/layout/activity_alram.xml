@@ -27,16 +27,19 @@
             android:id="@+id/delete"
             android:src="@mipmap/ic_launcher"
             android:background="@color/colorPrimaryDark"
-            android:layout_gravity="center"
             android:layout_width="100dp"
             android:layout_height="100dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
 
         <ImageView
             android:id="@+id/add"
             android:src="@mipmap/ic_launcher"
             android:background="@color/colorAccent"
-            android:layout_marginLeft="127dp"
-            android:layout_gravity="center"
             android:layout_width="100dp"
             android:layout_height="100dp" />
     </LinearLayout>

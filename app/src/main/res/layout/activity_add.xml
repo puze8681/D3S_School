@@ -5,82 +5,122 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:weightSum="10"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.parktaejun.d3s.AddActivity">
+
     <LinearLayout
+        android:layout_weight="1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
 
-        <EditText
-            android:id="@+id/edit1"
+        <Spinner
+            android:textAlignment="textEnd"
+            android:id="@+id/year"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_height="wrap_content" />
 
         <TextView
+            android:textAlignment="textStart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="년" />
 
-        <EditText
-            android:id="@+id/edit2"
+        <Spinner
+            android:textAlignment="textEnd"
+            android:id="@+id/month"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
+            android:layout_height="wrap_content" />
         <TextView
+            android:textAlignment="textStart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="월" />
 
-        <EditText
-            android:id="@+id/edit3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="일" />
     </LinearLayout>
 
     <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
 
-        <EditText
-            android:id="@+id/edit4"
+        <Spinner
+            android:textAlignment="textEnd"
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAlignment="textStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일" />
+
+        <Spinner
+            android:textAlignment="textEnd"
+            android:id="@+id/time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
-
         <TextView
+            android:textAlignment="textStart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="시" />
 
-        <EditText
-            android:id="@+id/edit5"
+        <Spinner
+            android:textAlignment="textEnd"
+            android:id="@+id/minute"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
-
         <TextView
+            android:textAlignment="textStart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="분" />
     </LinearLayout>
-
-    <Button
-        android:id="@+id/button1"
+    <LinearLayout
+        android:layout_weight="8"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="알람설정" />
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/context"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="textStart"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/alramSetting"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="등록" />
+        <Button
+            android:id="@+id/alramDelete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="취소" />
+    </LinearLayout>
+
 </LinearLayout>

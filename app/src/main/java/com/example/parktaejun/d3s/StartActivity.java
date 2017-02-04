@@ -12,6 +12,7 @@ public class StartActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        startActivity(new Intent(this,SplashActivity.class));
         setContentView(R.layout.activity_start);
 
         ImageView startButton = (ImageView) findViewById(R.id.startButton);

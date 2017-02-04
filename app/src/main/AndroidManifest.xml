@@ -2,9 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.parktaejun.d3s">
 
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
-    <uses-permission android:name="android.permission.VIBRATE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -26,7 +26,8 @@
         <activity android:name=".TeacherAdapter" />
         <activity android:name=".TeacherInfor" />
         <activity android:name=".AddActivity" />
-        <activity android:name=".AlramAdapter"></activity>
+        <activity android:name=".AlramAdapter" />
+        <activity android:name=".SplashActivity"></activity>
     </application>
 
 </manifest>
