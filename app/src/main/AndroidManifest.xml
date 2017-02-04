@@ -8,8 +8,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
+
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".StartActivity">
@@ -27,7 +28,11 @@
         <activity android:name=".TeacherInfor" />
         <activity android:name=".AddActivity" />
         <activity android:name=".AlramAdapter" />
-        <activity android:name=".SplashActivity"></activity>
+        <activity android:name=".SplashActivity" />
+        <activity
+            android:name=".TeacherFix"
+            android:label="@string/title_activity_teacher_fix"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

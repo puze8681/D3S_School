@@ -11,9 +11,11 @@ import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class AlramAdapter extends ArrayAdapter<String> {
 
-    AlramAdapter(Context context, String items[]) {
+    AlramAdapter(Context context, ArrayList<String> items) {
         super(context, R.layout.activity_teacher_adpater, items);
     }
 

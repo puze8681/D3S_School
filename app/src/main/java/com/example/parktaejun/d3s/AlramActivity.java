@@ -11,6 +11,8 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class AlramActivity extends AppCompatActivity {
 
     @Override
@@ -18,10 +20,16 @@ public class AlramActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alram);
 
+        ArrayList<String> items;
+        items = new ArrayList<String>();
+
+
         ImageView add = (ImageView)findViewById(R.id.add);
         //ImageView delete = (ImageView)findViewById(R.id.delete);
+        Intent alramInforIntent = getIntent();
+        String name = alramInforIntent.getStringExtra("allText");
+        items.add(name);
 
-        String[] items = {"1번", "2번", "3번", "4번"};
         ListAdapter listAdapter = new AlramAdapter(this, items);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(listAdapter);

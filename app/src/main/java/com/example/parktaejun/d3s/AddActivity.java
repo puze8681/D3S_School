@@ -1,5 +1,6 @@
 package com.example.parktaejun.d3s;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -54,7 +55,14 @@ public class AddActivity extends AppCompatActivity {
                 String alramMinute = minuteSpinner.getSelectedItem().toString();
                 String innerContext = context.getText().toString();
 
-
+                Intent addIntent = new Intent(AddActivity.this, AlramActivity.class);
+                addIntent.putExtra("month", alramMonth);
+                addIntent.putExtra("day", alramDay);
+                addIntent.putExtra("time", alramTime);
+                addIntent.putExtra("minute", alramMinute);
+                addIntent.putExtra("allText", alramYear + " 년, " + alramMonth + " 월, " + alramDay + " 일, "  + alramTime + " 시, " + alramMinute + " 분에 " + "\"" + innerContext + "\"" + "합니다!");
+                startActivity(addIntent);
+                finish();
             }
         });
 

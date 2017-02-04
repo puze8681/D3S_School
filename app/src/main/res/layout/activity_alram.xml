@@ -10,6 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     android:weightSum="10"
+    android:background="@color/yellow"
     tools:context="com.example.parktaejun.d3s.AlramActivity">
 
     <ListView
@@ -25,10 +26,10 @@
         android:layout_weight="2">
         <ImageView
             android:id="@+id/delete"
-            android:src="@mipmap/ic_launcher"
+            android:src="@drawable/delete"
             android:background="@color/colorPrimaryDark"
             android:layout_width="100dp"
-            android:layout_height="100dp" />
+            android:layout_height="wrap_content" />
 
         <View
             android:layout_width="0dp"
@@ -38,10 +39,10 @@
 
         <ImageView
             android:id="@+id/add"
-            android:src="@mipmap/ic_launcher"
+            android:src="@drawable/add"
             android:background="@color/colorAccent"
             android:layout_width="100dp"
-            android:layout_height="100dp" />
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
 </LinearLayout>

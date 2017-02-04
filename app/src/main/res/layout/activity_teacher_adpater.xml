@@ -7,14 +7,20 @@
     android:orientation="horizontal"
     tools:context="com.example.parktaejun.d3s.TeacherAdapter">
 
-    <ImageView
-        android:id="@+id/teacher_icon"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@android:drawable/alert_light_frame"/>
-    <TextView
-        android:id="@+id/teacher_name"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:textSize="30dp"/>
+    <LinearLayout
+        android:background="@drawable/list"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/teacher_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@android:drawable/alert_light_frame"/>
+        <TextView
+            android:id="@+id/teacher_name"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
 </LinearLayout>

@@ -10,6 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.parktaejun.d3s.ScheduleActivity"
     android:orientation="vertical"
+    android:background="@color/yellow"
     android:weightSum="10">
     
     <CalendarView
@@ -26,7 +27,7 @@
         android:textSize="30dp"
         android:textAlignment="center"
         android:layout_weight="1"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/backColor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     

@@ -15,7 +15,7 @@
         android:id="@+id/alram_infor"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="@color/colorAccent"
+        android:background="@drawable/list"
         />
 
 

@@ -6,20 +6,20 @@
     android:weightSum="2">
 
     <ImageView
-        android:background="@color/colorAccent"
+        android:background="@color/yellow"
+        android:src="@drawable/top"
         android:id="@+id/schedule"
-        android:src="@mipmap/ic_launcher"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:layout_gravity="center"/>
 
     <ImageView
-        android:background="@color/colorPrimary"
-        android:src="@mipmap/ic_launcher"
+        android:background="@color/green"
+        android:src="@drawable/bottom"
         android:id="@+id/teacher"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
         android:layout_weight="1"/>
 

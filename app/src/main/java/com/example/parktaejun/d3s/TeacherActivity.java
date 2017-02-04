@@ -15,7 +15,7 @@ public class TeacherActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teacher);
-        String[] items = {"1번", "2번", "3번", "4번"};
+        String[] items = {"선생님", "선생님", "선생님", "선생님"};
         ListAdapter listAdapter = new TeacherAdapter(this, items);
         ListView listView = (ListView) findViewById(R.id.listView);
         listView.setAdapter(listAdapter);
@@ -25,7 +25,6 @@ public class TeacherActivity extends AppCompatActivity {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
                         String item = String.valueOf(parent.getItemAtPosition(i));
-
                         Intent inforIntent = new Intent(TeacherActivity.this, TeacherInfor.class);
                         startActivity(inforIntent);
                         inforIntent.putExtra("teacherName", item);

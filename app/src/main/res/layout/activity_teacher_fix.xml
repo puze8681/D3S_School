@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:weightSum="10"
+    android:background="@color/green"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/teachername"
+        android:hint="선생님 별명"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"/>
+
+    <EditText
+        android:id="@+id/teachercontext"
+        android:hint="선생님 설명"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+        <ImageView
+            android:id="@+id/back"
+            android:background="@drawable/cancel"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/insert"
+            android:background="@drawable/setting"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+</LinearLayout>
