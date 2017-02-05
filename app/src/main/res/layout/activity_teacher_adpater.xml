@@ -4,10 +4,9 @@
     android:id="@+id/activity_teacher_adapter"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
     tools:context="com.example.parktaejun.d3s.TeacherAdapter">
 
-    <LinearLayout
+    <RelativeLayout
         android:background="@drawable/list"
         android:layout_width="wrap_content"
         android:layout_height="100dp">
@@ -17,10 +16,18 @@
             android:layout_height="100dp"
             android:src="@android:drawable/alert_light_frame"/>
         <TextView
+            android:layout_toRightOf="@id/teacher_icon"
             android:id="@+id/teacher_name"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="50dp"
             android:textSize="30dp"/>
-    </LinearLayout>
+        <TextView
+            android:id="@+id/teacher_subject"
+            android:layout_toRightOf="@id/teacher_icon"
+            android:layout_below="@id/teacher_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="20dp"/>
+    </RelativeLayout>
 
 </LinearLayout>

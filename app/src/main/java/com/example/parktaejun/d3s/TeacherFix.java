@@ -10,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 public class TeacherFix extends AppCompatActivity {
 
@@ -21,15 +22,15 @@ public class TeacherFix extends AppCompatActivity {
         final EditText teacher_name = (EditText)findViewById(R.id.teachername);
         final EditText teacher_context = (EditText)findViewById(R.id.teachercontext);
 
-        final Button back = (Button)findViewById(R.id.back);
-        Button check = (Button)findViewById(R.id.insert);
+        ImageView back = (ImageView)findViewById(R.id.back);
+        ImageView check = (ImageView)findViewById(R.id.insert);
 
         check.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent backIntent = new Intent(TeacherFix.this, TeacherInfor.class);
-                backIntent.putExtra("name", (Parcelable) teacher_name);
-                backIntent.putExtra("context", (Parcelable) teacher_context);
+                backIntent.putExtra("name", teacher_name.getText());
+                backIntent.putExtra("context", teacher_context.getText());
                 startActivity(backIntent);
                 finish();
             }

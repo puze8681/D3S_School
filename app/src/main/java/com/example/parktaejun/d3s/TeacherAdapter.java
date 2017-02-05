@@ -10,9 +10,11 @@ import android.widget.TextView;
 
 public class TeacherAdapter extends ArrayAdapter<String> {
 
-    TeacherAdapter(Context context, String items[]) {
+    TeacherAdapter(Context context, String[] items) {
         super(context, R.layout.activity_teacher_adpater, items);
     }
+
+
 
     @NonNull
     @Override
@@ -21,6 +23,9 @@ public class TeacherAdapter extends ArrayAdapter<String> {
         View view = imageinflater.inflate(R.layout.activity_teacher_adpater, parent, false);
         String item = getItem(position);
         TextView textView = (TextView) view.findViewById(R.id.teacher_name);
+        TextView textView1 = (TextView) view.findViewById(R.id.teacher_subject);
+
+
         textView.setText(item);
 
         return view;

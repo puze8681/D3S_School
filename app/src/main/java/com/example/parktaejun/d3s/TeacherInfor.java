@@ -21,11 +21,11 @@ public class TeacherInfor extends AppCompatActivity {
         TextView teacherContext = (TextView)findViewById(R.id.teacher_context);
         Button fixTeacher = (Button)findViewById(R.id.insert);
 
-
         Intent teacherInforIntent = getIntent();
         String context = teacherInforIntent.getStringExtra("context");
         String name = teacherInforIntent.getStringExtra("teacherName");
         String name2 = teacherInforIntent.getStringExtra("name");
+
         teacherName.setText(name);
         teacherContext.setText(context);
         teacherName.setText(name);
